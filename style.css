@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blue: hsl(246, 80%, 60%);
+
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", serif;
+  background-color: var(--Very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  /* flex-wrap: wrap; */
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.profile-back {
+  width: 18rem;
+  background-color: var(--Dark-blue);
+  border-radius: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.profile {
+  background-color: var(--Blue);
+  border-radius: 0.9rem;
+  padding: 2rem 4rem 4rem 2rem;
+}
+
+.profile-img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-report {
+  color: var(--Pale-Blue);
+}
+
+.profile-name {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.view-options {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.view-options li {
+  list-style: none;
+  color: var(--Desaturated-blue);
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.view-options li:last-child {
+  margin-bottom: 0;
+}
+
+.view-options li:hover {
+  color: #fff;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card-header {
+  width: 18rem;
+  background-color: var(--Light-red-work);
+  border-radius: 0.9rem;
+  padding-top: 3rem;
+  position: relative;
+}
+
+.card-header::before {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: scale(0.6);
+}
+
+.work::before {
+  content: url(./images/icon-work.svg);
+}
+
+.play {
+  background-color: var(--Soft-blue-play);
+}
+
+.play::before {
+  content: url(./images/icon-play.svg);
+}
+
+.study {
+  background-color: var(--Light-red-study);
+}
+
+.study::before {
+  content: url(./images/icon-study.svg);
+}
+
+.exercise {
+  background-color: var(--Lime-green-exercise);
+}
+
+.exercise::before {
+  content: url(./images/icon-exercise.svg);
+  top: -8%;
+}
+
+.social {
+  background-color: var(--Violet-social);
+}
+
+.social::before {
+  content: url(./images/icon-social.svg);
+  top: -15%;
+}
+
+.self-care {
+  background-color: var(--Soft-orange-self-care);
+}
+
+.self-care::before {
+  content: url(./images/icon-self-care.svg);
+  top: -8%;
+}
+
+.card {
+  background-color: var(--Dark-blue);
+  padding: 2rem;
+  border-radius: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--Desaturated-blue);
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.link-img {
+  width: 1.4rem;
+  cursor: pointer;
+}
+
+.link-back .link-img:hover {
+  stroke: #fff;
+}
+
+.hours {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.previous {
+  color: var(--Pale-Blue);
+}
+
+/* 820px */
+
+@media (max-width: 51.25em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 780px */
+@media (max-width: 48.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* 710.08px */
+@media (max-width: 44.38em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 650.08px */
+@media (max-width: 40.63em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 36.25em) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-back {
+    width: 32rem;
+  }
+
+  .profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem 2rem 2rem;
+  }
+
+  .profile-img {
+    width: 7rem;
+    margin-bottom: 0;
+  }
+
+  .profile-report {
+    font-size: 1.2rem;
+  }
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .view-options {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-left: 0;
+  }
+
+  .view-options li {
+    font-size: 1.6rem;
+  }
+
+  .card-header {
+    width: 32rem;
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .previous {
+    font-size: 1.2rem;
+  }
+
+  .link-img {
+    width: 1.8rem;
+  }
+
+  .card-header::before {
+    top: -12%;
+    left: 70%;
+  }
+
+  .exercise::before {
+    top: -8%;
+  }
+
+  .social::before {
+    top: -19%;
+  }
+
+  .self-care::before {
+    top: -11%;
+  }
+}
+
+@media (max-width: 18.75em) {
+  html {
+    font-size: 50%;
+  }
+}
