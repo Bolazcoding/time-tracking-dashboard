@@ -28,11 +28,11 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 - Desktop preview
 
-![](./assets/images/Desktop%20preview.jpg)
+![](./images/Desktop%20preview.jpg)
 
 - Mobile preview
 
-  ![](./assets/images/Mobile%20preview.jpg)
+  ![](./images/Mobile%20preview.jpg)
 
 ### Links
 
