@@ -36,8 +36,8 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/Bolazcoding/newsletter-signup)
-- Live Site URL: [Live site URL](https://mobolaji-newsletter-signup.netlify.app/)
+- Solution URL: [Solution URL](https://github.com/Bolazcoding/time-tracking-dashboard)
+- Live Site URL: [Live site URL](https://time-tracking-dashboard-snowy-alpha.vercel.app/)
 
 ## My process
 
